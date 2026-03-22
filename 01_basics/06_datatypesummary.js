@@ -60,3 +60,30 @@ null was represented internally as all zeros (000). Not fixed because it would b
  Array when checked with typeof returns object, as they are special type of objects.
 */
 
+// Stack and Heap Memory
+
+// Stack (Primitive) and Heap (Reference or Non-Primitive)
+
+let userName = "Asmit";
+let user2 = userName;
+user2 = "Bheem";
+
+console.log(userName);
+console.log(user2);
+
+// Changes made in stack are made in a copy, the original value doesn't change.
+
+
+let user = {
+    email: "user@google.com",
+    name: "victor",
+}
+
+let userManager = user;
+
+userManager.email = "martybyrd@google.com" ;
+
+console.log(user);
+console.log(userManager);
+
+//Changes made in heap memory are made in original variable.
