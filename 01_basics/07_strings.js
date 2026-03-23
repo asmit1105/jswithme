@@ -40,4 +40,21 @@ console.log(name.concat(" ", gameName)); // Asmit asmit1105 (not a very good exa
 
 //Remove whitespace - trim
 
+let pet = "    cat  ";
+console.log(pet.trim()); //cat
+console.log(pet);//   cat
+
+// replace
+console.log(pet.replace("cat", "dogs"));
+
+//split
+
+let text = "apple,banana,mango";
+console.log(text.split(","));
+console.log(text);
+
+
+
+
+
 
