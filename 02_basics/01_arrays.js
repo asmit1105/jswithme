@@ -13,7 +13,7 @@ let heroes = new Array("Batman" , "Spiderman" , "Superman", "Hulk");
 // console.log(typeof heroes); // still an object
 
 // Basic Array METHODS
-/* 1. PUSH - it puts another value in the string at last*/ 
+/* PUSH - adds value at the end of array */ 
 
 heroes.push("Dhurandar");
 // console.log(heroes); // Output - [ 'Batman', 'Spiderman', 'Superman', 'Hulk', 'Dhurandar' ]
@@ -62,13 +62,30 @@ console.log(copy);
 
 /* SPLICE - affects original array */
 
-const array = [0,1,2,3,4,5];
-//const changedArr = array.splice(0,3); start from 0 and remove 3 values
+//const array = [0,1,2,3,4,5];
+//const changedArr1 = array.splice(0,3); start from 0 and remove 3 values
 
-// console.log(changedArr);
+// console.log(changedArr1);
 // console.log(array); // changed
 
-const changedArr = array.splice(2,0,99) // start from 0
+// to add a value to original array
+const big = [0,1,2,3,4,5,6];
+const changedArr = big.splice(2,0,99); // start from 0 remove 0 and add 99;
+console.log(changedArr); // returns empty
+console.log(big); // added 99
+
+// to replace a value from original array
+
+const small = [0,1,2,3,4,5,6];
+const cArr = small.splice(2,1,99);
+console.log(small); // value replaced
+
+
+
+
+
+
+
 
 
 
