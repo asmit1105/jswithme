@@ -4,3 +4,7 @@ const object = {
 }
 
 console.log(object);
+
+const obj = new Object({ name: "Asmit"});
+
+console.log(obj);
