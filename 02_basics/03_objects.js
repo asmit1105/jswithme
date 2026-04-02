@@ -10,6 +10,14 @@ const obj = new Object({ name: "Asmit"});
 console.log(obj);
 
 obj.name = "Asmit Sharma";
+const user = {
+  name: "Asmit",
+  greet: function() {
+    console.log("Hello " + this.name);
+  }
+};
+
+user.greet(); // Hello Asmit
 
 console.log(obj);
 
