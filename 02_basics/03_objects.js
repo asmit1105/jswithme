@@ -1,40 +1,32 @@
-// singleton
-// Object.create
-
-// object literals
-
-const mySym = Symbol("key1")
-
+const mySym = Symbol("key1");
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
+    name: "Asmit",
     age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
+    mySym: "0303",
+    email: "asmit@google.com",
+    location: "New Delhi",
+    
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+console.log(JsUser.age);
+JsUser.email = "asmit@meta.com"; // Here we modified user's email
+console.log(JsUser.email);
 
-JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
+// To lock the user details
 
-JsUser.greeting = function(){
-    console.log("Hello JS user");
-}
+Object.freeze(JsUser);
+
+JsUser.email = "NaN";
+console.log(JsUser.email); // Not Changed
+
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`); // this is current object
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+// Symbols
 
-// Not working today
+
+
+console.log(typeof JsUser.mySym); // string
+console.log(JsUser[typeof "mySym"]); // now its symbol (unique)
