@@ -1,10 +1,7 @@
-//Comment
+const hypeXuser = {};
 
-const khushi = {
-    age: 14,
-    class: "10th",
-    hobby: "Gaming Painting Singing",
+hypeXuser.id = "60475abc";
+hypeXuser.name = "Govind";
+hypeXuser.isLoggedIn = false;
 
-}
-
-console.log(khushi);
+console.log(hypeXuser);
