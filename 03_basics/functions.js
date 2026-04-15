@@ -36,5 +36,32 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage("asmit"))
+// console.log(loginUserMessage("asmit"))
+
+function addToCart(...num1) {
+return num1;
+}
+
+console.log(addToCart(5,9,10,40));
+
+const user = {
+    name: "Asmit",
+    price: 2100
+}
+
+function handleObjects(anyObject) {
+    console.log(`User: ${anyObject.name} cart's bill is: ${anyObject.price}`);
+    
+}
+
+handleObjects(user);
+
+const Array = [20,200,40,29];
+
+function handleArray(AnyArray) {
+    console.log(AnyArray[1]);
+    
+}
+
+handleArray(Array);
